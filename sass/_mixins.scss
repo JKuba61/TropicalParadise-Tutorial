@@ -1,0 +1,30 @@
+@mixin burgerBtn {
+	position: absolute;
+	right: 0;
+	height: 3px;
+	content: '';
+	background-color: $pure-white;
+	transition: width 0.3s;
+	box-shadow: 2px 2px 5px rgba(58, 57, 57, 0.575);
+}
+
+@mixin heroImages($bgImg) {
+	background-image: $blue-gradient, url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+@mixin islandCard {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin contactForm {
+	margin-bottom: 2em;
+	padding: 0.6em 1.6em;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.6rem;
+}
